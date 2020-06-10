@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 import crypto from "crypto";
 
-const UserSchema = new mongoose.UserSchema({
+const UserSchema = new mongoose.Schema({
   name: {
     type: String,
     trim: true,
-    required: "Name is required",
+    required: "Name is required"
   },
   email: {
     type: String,
